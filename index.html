@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- // TÍTULO DE LA PESTAÑA -->
+  <title>El templo como aula</title>
+
+  <!-- // FUENTES: Inter (cuerpo) + Cormorant Garamond (títulos). Cambiálas en Google Fonts y en style.css → --font / --font-title -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       // NAV — barra superior
+       ============================================================ -->
+  <header class="nav">
+    <div class="container nav__inner">
+
+      <!-- // LOGO: reemplazá el texto por <img src="img/logo.png" alt="Logo"> -->
+      <a href="#inicio" class="nav__logo"><img src="logo-minimal.svg" alt="Logo"></a>
+
+      <!-- // LINKS DEL MENÚ: cambiá texto y href -->
+      <nav class="nav__links">
+        <a href="#inicio">Nuestra misión</a>
+        <a href="#servicios">El plan</a>
+        <a href="#galeria">Presupuesto</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <!-- // BOTÓN DEL NAV -->
+      <a href="#contacto" class="btn btn--primary nav__cta">Aplicá al proyecto</a>
+
+      <!-- // hamburguesa mobile (no tocar) -->
+      <button class="nav__burger" aria-label="Menú"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       // HERO — sección principal
+       ============================================================ -->
+  <section id="inicio" class="hero">
+    <!-- // fondo animado (blobs). Colores en style.css → --blob-1 / --blob-2 -->
+    <div class="hero__bg">
+      <div class="blob blob--1"></div>
+      <div class="blob blob--2"></div>
+      <div class="blob blob--3"></div>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__text">
+
+        <!-- // TÍTULO PRINCIPAL -->
+        <h1 class="reveal">El templo como <span class="grad">aula</span></h1>
+
+        <!-- // SUBTÍTULO -->
+        <p class="lead reveal">Un modelo de visitas guiadas para capillas escolares.</p>
+
+        <!-- // BOTONES DEL HERO -->
+        <div class="hero__actions reveal">
+          <a href="#contacto" class="btn btn--primary">Aplicá al proyecto</a>
+          <a href="#servicios" class="btn btn--ghost">Ver más </a>
+        </div>
+      </div>
+
+      <!-- // IMAGEN DEL HERO: poné tu img en src -->
+      <div class="hero__media reveal">
+        <div class="hero__img-wrap floaty">
+          <img src="logo.png" alt="Imagen hero">
+        </div>
+      </div>
+    </div>
+
+    <!-- // flechita de scroll (podés borrarla) -->
+    <a href="#logos" class="hero__scroll" aria-label="Bajar"></a>
+  </section>
+
+
+  <!-- ============================================================
+       // LOGOS — franja de marcas/aliados (marquee infinito)
+       ============================================================ -->
+  <section id="logos" class="logos">
+    <div class="container">
+      <!-- // TEXTO CHICO arriba de los logos -->
+      <p class="logos__label">Texto chico</p>
+    </div>
+    <div class="marquee">
+      <div class="marquee__track">
+        <!-- // LOGOS: reemplazá cada <img> por tu logo. Se repiten 2 veces para el loop -->
+        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+1" alt="">
+        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+2" alt="">
+        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+3" alt="">
+        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+4" alt="">
+        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+5" alt="">
+        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+6" alt="">
+        <!-- // copia (no tocar, es para el loop) -->
+        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+1" alt="">
+        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+2" alt="">
+        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+3" alt="">
+        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+4" alt="">
+        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+5" alt="">
+        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+6" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       // SERVICIOS / FEATURES — tarjetas
+       ============================================================ -->
+  <section id="servicios" class="section">
+    <div class="container">
+      <div class="section__head">
+        <!-- // TÍTULO DE SECCIÓN -->
+        <h2 class="reveal">Potenciá la capilla del colegio del barrio</h2>
+        <!-- // DESCRIPCIÓN DE SECCIÓN -->
+        <p class="lead reveal"></p>
+      </div>
+
+      <!-- // TARJETAS: copiá/pegá un .card para agregar más -->
+      <div class="grid grid--3">
+
+        <!-- // CARD 1 -->
+        <article class="card reveal">
+          <div class="card__icon">
+            <!-- // ICONO: reemplazá el svg por <img src="img/icono1.svg"> o un emoji -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <h3>Título card</h3>
+          <p>Descripción breve de la card.</p>
+        </article>
+
+        <!-- // CARD 2 -->
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="4"/></svg>
+          </div>
+          <h3>Título card</h3>
+          <p>Descripción breve de la card.</p>
+        </article>
+
+        <!-- // CARD 3 -->
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l9 18H3z"/></svg>
+          </div>
+          <h3>Título card</h3>
+          <p>Descripción breve de la card.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       // ASIDE / BLOQUE IMG + TEXTO (zig-zag)
+       ============================================================ -->
+  <section class="section section--soft">
+    <div class="container">
+
+      <!-- // BLOQUE 1: imagen izquierda, texto derecha -->
+      <div class="split">
+        <div class="split__media reveal">
+          <!-- // IMG -->
+          <img src="https://placehold.co/560x420/f1f3f7/9aa3b2?text=IMG+1" alt="">
+        </div>
+        <div class="split__text">
+          <span class="tag reveal">Etiqueta</span>
+          <!-- // TÍTULO -->
+          <h2 class="reveal">Título del bloque</h2>
+          <!-- // TEXTO -->
+          <p class="reveal">Texto del bloque. Contá algo acá.</p>
+          <!-- // LISTA (borrala si no la usás) -->
+          <ul class="checks reveal">
+            <li>Punto uno</li>
+            <li>Punto dos</li>
+            <li>Punto tres</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- // BLOQUE 2: texto izquierda, imagen derecha (clase split--reverse) -->
+      <div class="split split--reverse">
+        <div class="split__media reveal">
+          <!-- // IMG -->
+          <img src="https://placehold.co/560x420/f1f3f7/9aa3b2?text=IMG+2" alt="">
+        </div>
+        <div class="split__text">
+          <span class="tag reveal">Etiqueta</span>
+          <h2 class="reveal">Título del bloque</h2>
+          <p class="reveal">Texto del bloque. Contá algo acá.</p>
+          <a href="#contacto" class="btn btn--primary reveal">Botón</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       // NÚMEROS / STATS — contadores animados
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="stats">
+        <!-- // STAT: data-count = número final, data-suffix = lo que va después (+, %, k, etc.) -->
+        <div class="stat reveal">
+          <span class="stat__num" data-count="120" data-suffix="+">0</span>
+          <span class="stat__label">Etiqueta</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="98" data-suffix="%">0</span>
+          <span class="stat__label">Etiqueta</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="15" data-suffix="">0</span>
+          <span class="stat__label">Etiqueta</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="24" data-suffix="/7">0</span>
+          <span class="stat__label">Etiqueta</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       // GALERÍA — grilla de imágenes con hover
+       ============================================================ -->
+  <section id="galeria" class="section section--soft">
+    <div class="container">
+      <div class="section__head">
+        <span class="tag reveal">Etiqueta</span>
+        <h2 class="reveal">Título de galería</h2>
+      </div>
+
+      <!-- // GALERÍA: cambiá cada src. La primera ocupa 2 columnas (clase gallery__item--wide) -->
+      <div class="gallery">
+        <a href="#" class="gallery__item gallery__item--wide reveal"><img src="https://placehold.co/900x500/f1f3f7/9aa3b2?text=IMG+A" alt=""></a>
+        <a href="#" class="gallery__item reveal"><img src="https://placehold.co/450x500/f1f3f7/9aa3b2?text=IMG+B" alt=""></a>
+        <a href="#" class="gallery__item reveal"><img src="https://placehold.co/450x500/f1f3f7/9aa3b2?text=IMG+C" alt=""></a>
+        <a href="#" class="gallery__item reveal"><img src="https://placehold.co/450x500/f1f3f7/9aa3b2?text=IMG+D" alt=""></a>
+        <a href="#" class="gallery__item reveal"><img src="https://placehold.co/450x500/f1f3f7/9aa3b2?text=IMG+E" alt=""></a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       // TESTIMONIOS — tarjetas con cita
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <span class="tag reveal">Etiqueta</span>
+        <h2 class="reveal">Título testimonios</h2>
+      </div>
+
+      <div class="grid grid--3">
+        <!-- // TESTIMONIO 1 -->
+        <article class="quote reveal">
+          <p>“Cita del cliente. Texto corto.”</p>
+          <div class="quote__author">
+            <!-- // FOTO -->
+            <img src="https://placehold.co/48x48/e5e8ee/9aa3b2?text=A" alt="">
+            <div>
+              <strong>Nombre</strong>
+              <span>Cargo / empresa</span>
+            </div>
+          </div>
+        </article>
+        <!-- // TESTIMONIO 2 -->
+        <article class="quote reveal">
+          <p>“Cita del cliente. Texto corto.”</p>
+          <div class="quote__author">
+            <img src="https://placehold.co/48x48/e5e8ee/9aa3b2?text=B" alt="">
+            <div><strong>Nombre</strong><span>Cargo / empresa</span></div>
+          </div>
+        </article>
+        <!-- // TESTIMONIO 3 -->
+        <article class="quote reveal">
+          <p>“Cita del cliente. Texto corto.”</p>
+          <div class="quote__author">
+            <img src="https://placehold.co/48x48/e5e8ee/9aa3b2?text=C" alt="">
+            <div><strong>Nombre</strong><span>Cargo / empresa</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       // CTA FINAL — banner de cierre
+       ============================================================ -->
+  <section id="contacto" class="section">
+    <div class="container">
+      <div class="cta reveal">
+        <div class="cta__glow"></div>
+        <!-- // TÍTULO CTA -->
+        <h2>Título del llamado a la acción</h2>
+        <!-- // TEXTO CTA -->
+        <p class="lead">Texto corto de cierre.</p>
+        <!-- // BOTONES CTA -->
+        <div class="cta__actions">
+          <a href="mailto:tu@mail.com" class="btn btn--primary btn--lg">Botón</a>
+          <a href="#" class="btn btn--ghost btn--lg">Botón</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       // FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <!-- // LOGO FOOTER -->
+      <a href="#inicio" class="nav__logo"><img src="logo-minimal.svg" alt="Logo"></a>
+
+      <!-- // LINKS FOOTER -->
+      <nav class="footer__links">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+
+      <!-- // REDES: reemplazá los círculos por íconos/imgs -->
+      <div class="footer__social">
+        <a href="#" aria-label="Red 1"></a>
+        <a href="#" aria-label="Red 2"></a>
+        <a href="#" aria-label="Red 3"></a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <!-- // COPYRIGHT -->
+      <p>© 2026 Nombre. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" width="600" height="520">
+  <!-- ============================================================
+       LOGO ILUSTRADO (vector)
+       Colores: cambiá los valores acá y se actualiza todo.
+       ============================================================ -->
+  <defs>
+    <style>
+      .navy   { fill: #1f3a6e; }   /* azul marino */
+      .gold   { fill: #c9a63a; }   /* dorado */
+      .cream  { fill: #f7f1e1; }   /* crema */
+      .stone  { fill: #e9dfc6; }   /* piedra */
+      .sky    { fill: #2d4a8a; }   /* azul bóveda */
+      .glass  { fill: #7fa6e0; }   /* vitral */
+      .skin   { fill: #e8b98c; }
+      .hair   { fill: #3a2a1e; }
+    </style>
+    <!-- recorte del interior del arco -->
+    <clipPath id="interior">
+      <path d="M110,270 A190,190 0 0 1 490,270 L490,425 L110,425 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- // CRUZ DEL CAMPANARIO -->
+  <rect class="gold" x="295" y="4" width="10" height="46" rx="2"/>
+  <rect class="gold" x="282" y="16" width="36" height="10" rx="2"/>
+
+  <!-- // CAMPANARIO -->
+  <path class="navy" d="M262,96 L300,52 L338,96 Z"/>
+  <path d="M262,96 L300,52 L338,96 Z" fill="none" stroke="#c9a63a" stroke-width="4"/>
+  <rect class="cream" x="292" y="70" width="16" height="22" rx="8"/>
+
+  <!-- // ARCO EXTERIOR (dorado + azul) -->
+  <path class="gold" d="M72,270 A228,228 0 0 1 528,270 L528,425 L72,425 Z"/>
+  <path class="navy" d="M84,270 A216,216 0 0 1 516,270 L516,425 L84,425 Z"/>
+  <path class="cream" d="M100,270 A200,200 0 0 1 500,270 L500,425 L100,425 Z"/>
+
+  <!-- ============================================================
+       // INTERIOR DE LA CAPILLA
+       ============================================================ -->
+  <g clip-path="url(#interior)">
+    <!-- pared -->
+    <rect class="cream" x="100" y="70" width="400" height="360"/>
+
+    <!-- bóveda estrellada -->
+    <path class="sky" d="M110,270 A190,190 0 0 1 490,270 L490,250 A190,150 0 0 0 110,250 Z"/>
+    <g class="gold">
+      <circle cx="260" cy="150" r="2.5"/><circle cx="300" cy="120" r="3"/><circle cx="345" cy="150" r="2.5"/>
+      <circle cx="220" cy="190" r="2"/><circle cx="380" cy="185" r="2"/><circle cx="300" cy="170" r="2"/>
+    </g>
+
+    <!-- arco central del altar -->
+    <path class="gold" d="M215,300 A85,85 0 0 1 385,300 L385,330 L215,330 Z"/>
+    <path class="navy" d="M225,300 A75,75 0 0 1 375,300 L375,330 L225,330 Z"/>
+
+    <!-- columnas -->
+    <g class="stone">
+      <rect x="196" y="200" width="22" height="230"/>
+      <rect x="382" y="200" width="22" height="230"/>
+    </g>
+    <g class="gold">
+      <rect x="190" y="196" width="34" height="10" rx="3"/>
+      <rect x="376" y="196" width="34" height="10" rx="3"/>
+    </g>
+
+    <!-- vitrales laterales -->
+    <g>
+      <path class="gold" d="M136,235 A34,34 0 0 1 204,235 L204,330 L136,330 Z" transform="translate(-6 0)"/>
+      <path class="glass" d="M142,238 A28,28 0 0 1 198,238 L198,324 L142,324 Z" transform="translate(-6 0)"/>
+      <rect class="gold" x="163" y="238" width="4" height="86"/>
+      <rect class="gold" x="136" y="278" width="56" height="4"/>
+    </g>
+    <g>
+      <path class="gold" d="M396,235 A34,34 0 0 1 464,235 L464,330 L396,330 Z" transform="translate(6 0)"/>
+      <path class="glass" d="M402,238 A28,28 0 0 1 458,238 L458,324 L402,324 Z" transform="translate(6 0)"/>
+      <rect class="gold" x="434" y="238" width="4" height="86"/>
+      <rect class="gold" x="408" y="278" width="56" height="4"/>
+    </g>
+
+    <!-- cruz del altar -->
+    <rect fill="#6b4a2b" x="295" y="238" width="10" height="70" rx="2"/>
+    <rect fill="#6b4a2b" x="278" y="256" width="44" height="10" rx="2"/>
+
+    <!-- altar -->
+    <rect class="gold" x="248" y="332" width="104" height="8" rx="2"/>
+    <rect class="stone" x="254" y="340" width="92" height="40"/>
+    <rect class="gold" x="262" y="318" width="10" height="14"/>
+    <rect class="gold" x="328" y="318" width="10" height="14"/>
+    <!-- escalones -->
+    <rect class="stone" x="220" y="380" width="160" height="14"/>
+    <rect class="cream" x="200" y="394" width="200" height="14"/>
+
+    <!-- rayos de luz -->
+    <g fill="#f6dd8a" opacity=".45">
+      <polygon points="120,120 150,110 330,300 300,310"/>
+      <polygon points="150,100 175,95 350,290 330,300"/>
+    </g>
+
+    <!-- ============================================================
+         // VISITANTES (adultos, ropa casual, de espaldas)
+         ============================================================ -->
+    <!-- hombre alto, campera gris -->
+    <g>
+      <rect fill="#6c7280" x="118" y="335" width="56" height="110" rx="18"/>
+      <circle class="hair" cx="146" cy="318" r="19"/>
+    </g>
+    <!-- mujer con rodete, remera terracota -->
+    <g>
+      <rect fill="#c2694a" x="176" y="355" width="50" height="90" rx="16"/>
+      <circle class="hair" cx="201" cy="340" r="17"/>
+      <circle class="hair" cx="201" cy="322" r="8"/>
+    </g>
+    <!-- niño, buzo verde oliva -->
+    <g>
+      <rect fill="#7e9a5a" x="318" y="375" width="40" height="70" rx="14"/>
+      <circle class="hair" cx="338" cy="362" r="14"/>
+    </g>
+    <!-- mujer pelo largo, cárdigan verde -->
+    <g>
+      <rect fill="#3f7a6a" x="362" y="350" width="52" height="95" rx="17"/>
+      <path class="hair" d="M370,355 Q388,325 406,355 L410,400 L366,400 Z"/>
+      <circle class="hair" cx="388" cy="338" r="18"/>
+    </g>
+    <!-- hombre con gorra, camisa celeste -->
+    <g>
+      <rect fill="#8fb3d9" x="420" y="340" width="56" height="105" rx="18"/>
+      <circle class="hair" cx="448" cy="322" r="18"/>
+      <path fill="#2d4a8a" d="M428,318 A20,20 0 0 1 468,318 L472,322 L424,322 Z"/>
+    </g>
+
+    <!-- ============================================================
+         // ALUMNO GUÍA (uniforme: camisa blanca, chaleco azul, mochila)
+         ============================================================ -->
+    <g>
+      <!-- piernas -->
+      <rect class="navy" x="244" y="380" width="16" height="60"/>
+      <rect class="navy" x="264" y="380" width="16" height="60"/>
+      <!-- camisa -->
+      <rect fill="#ffffff" x="230" y="292" width="64" height="95" rx="20"/>
+      <!-- chaleco -->
+      <path class="navy" d="M238,300 L286,300 L282,385 L242,385 Z"/>
+      <!-- mochila -->
+      <rect fill="#2d4a8a" x="242" y="305" width="40" height="55" rx="10"/>
+      <rect fill="#1f3a6e" x="248" y="296" width="8" height="30" rx="4"/>
+      <rect fill="#1f3a6e" x="268" y="296" width="8" height="30" rx="4"/>
+      <!-- brazo señalando al altar -->
+      <path fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" d="M288,310 L322,286"/>
+      <circle class="skin" cx="326" cy="282" r="7"/>
+      <!-- cabeza -->
+      <circle class="skin" cx="262" cy="272" r="18"/>
+      <path class="hair" d="M244,272 A18,18 0 0 1 280,272 Z"/>
+    </g>
+  </g>
+
+  <!-- // LIBRO ABIERTO -->
+  <path class="navy" d="M300,516 C230,470 130,468 40,500 L40,478 C130,446 230,448 300,494 C370,448 470,446 560,478 L560,500 C470,468 370,470 300,516 Z"/>
+  <path class="gold" d="M300,506 C232,462 138,460 52,490 L52,482 C138,452 232,454 300,498 C368,454 462,452 548,482 L548,490 C462,460 368,462 300,506 Z"/>
+  <path class="cream" d="M300,494 C232,452 138,450 60,478 L60,468 C138,440 232,442 300,484 C368,442 462,440 540,468 L540,478 C462,450 368,452 300,494 Z"/>
+  <rect class="gold" x="297" y="426" width="6" height="70"/>
+</svg>
