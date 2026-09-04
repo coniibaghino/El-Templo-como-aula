@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- ============================================================
+       LOGO MINIMALISTA
+       Arco de capilla + cruz. Adentro: un alumno (dorado) señalando
+       hacia arriba y dos visitantes (azul) escuchando.
+       Cambiá los dos colores acá abajo.
+       ============================================================ -->
+  <defs>
+    <style>
+      .navy { stroke: #1f3a6e; fill: #1f3a6e; }   /* azul marino */
+      .gold { stroke: #c9a63a; fill: #c9a63a; }   /* dorado */
+      .line { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <!-- // CRUZ -->
+  <path class="line gold" stroke-width="8" d="M100,10 V36 M88,22 H112"/>
+
+  <!-- // ARCO -->
+  <path class="line navy" stroke-width="10" d="M40,184 V104 A60,60 0 0 1 160,104 V184"/>
+
+  <!-- // ALUMNO GUÍA (dorado, brazo arriba) -->
+  <circle class="gold" cx="100" cy="104" r="11"/>
+  <path class="line gold" stroke-width="11" d="M100,122 V158"/>
+  <path class="line gold" stroke-width="9"  d="M100,130 L122,106"/>
+
+  <!-- // VISITANTES (azul) -->
+  <circle class="navy" cx="68" cy="128" r="9"/>
+  <path class="line navy" stroke-width="9" d="M68,143 V172"/>
+  <circle class="navy" cx="132" cy="134" r="9"/>
+  <path class="line navy" stroke-width="9" d="M132,149 V172"/>
+</svg>
