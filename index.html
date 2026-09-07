@@ -1,366 +1,750 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- // TÍTULO DE LA PESTAÑA -->
-  <title>El templo como aula</title>
+    <!-- // TÍTULO DE LA PESTAÑA -->
+    <title>El Templo como Aula</title>
+    <meta
+      name="description"
+      content="Un modelo replicable de visitas guiadas por alumnos en capillas escolares. Caso: Instituto Sagrado Corazón de Lanús."
+    />
 
-  <!-- // FUENTES: Inter (cuerpo) + Cormorant Garamond (títulos). Cambiálas en Google Fonts y en style.css → --font / --font-title -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <!-- ============================================================
-       // NAV — barra superior
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="img/logo-minimal.svg" />
+  </head>
+  <body>
+    <!-- ============================================================
+       // NAV
        ============================================================ -->
-  <header class="nav">
-    <div class="container nav__inner">
+    <header class="nav">
+      <div class="container nav__inner">
+        <a href="#inicio" class="nav__logo"
+          ><img src="img/logo-minimal.svg" alt="El Templo como Aula"
+        /></a>
 
-      <!-- // LOGO: reemplazá el texto por <img src="img/logo.png" alt="Logo"> -->
-      <a href="#inicio" class="nav__logo"><img src="logo-minimal.svg" alt="Logo"></a>
+        <!-- // LINKS DEL MENÚ -->
+        <nav class="nav__links">
+          <a href="#mision">Nuestra misión</a>
+          <a href="#beneficios">Beneficios</a>
+          <a href="#plan">El plan</a>
+          <a href="#circuito">El circuito</a>
+          <a href="#presupuesto">Presupuesto</a>
+        </nav>
 
-      <!-- // LINKS DEL MENÚ: cambiá texto y href -->
-      <nav class="nav__links">
-        <a href="#inicio">Nuestra misión</a>
-        <a href="#servicios">Beneficios</a>
-        <a href="#galeria">El plan</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
+        <a href="#contacto" class="btn btn--primary nav__cta"
+          >Aplicá el modelo</a
+        >
+        <button class="nav__burger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
 
-      <!-- // BOTÓN DEL NAV -->
-      <a href="#contacto" class="btn btn--primary nav__cta">Aplicá al proyecto</a>
-
-      <!-- // hamburguesa mobile (no tocar) -->
-      <button class="nav__burger" aria-label="Menú"><span></span><span></span><span></span></button>
-    </div>
-  </header>
-
-
-  <!-- ============================================================
-       // HERO — sección principal
+    <!-- ============================================================
+       // HERO
        ============================================================ -->
-  <section id="inicio" class="hero">
-    <!-- // fondo animado (blobs). Colores en style.css → --blob-1 / --blob-2 -->
-    <div class="hero__bg">
-      <div class="blob blob--1"></div>
-      <div class="blob blob--2"></div>
-      <div class="blob blob--3"></div>
-    </div>
-
-    <div class="container hero__inner">
-      <div class="hero__text">
-
-        <!-- // TÍTULO PRINCIPAL -->
-        <h1 class="reveal" style="font-size: 68px;">El <span class="grad">Templo</span> como <span class="grad">aula</span></h1>
-
-        <!-- // SUBTÍTULO -->
-        <p class="lead reveal">Un modelo de visitas guiadas para capillas escolares.</p>
-
-        <!-- // BOTONES DEL HERO -->
-        <div class="hero__actions reveal">
-          <a href="#contacto" class="btn btn--primary">Aplicá al proyecto</a>
-          <a href="#servicios" class="btn btn--ghost">Ver más </a>
-        </div>
+    <section id="inicio" class="hero">
+      <div class="hero__bg">
+        <div class="blob blob--1"></div>
+        <div class="blob blob--2"></div>
+        <div class="blob blob--3"></div>
       </div>
 
-      <!-- // IMAGEN DEL HERO: poné tu img en src -->
-      <div class="hero__media reveal">
-        <div class="hero__img-wrap floaty">
-          <img src="logo.png" alt="Imagen hero">
-        </div>
-      </div>
-    </div>
-
-    <!-- // flechita de scroll (podés borrarla) -->
-    <a href="#logos" class="hero__scroll" aria-label="Bajar"></a>
-  </section>
-
-
-  <!-- ============================================================
-       // LOGOS — franja de marcas/aliados (marquee infinito)
-       ============================================================ -->
- <section id="logos" class="logos">
-    <div class="container">
-      <!-- // TEXTO CHICO arriba de los logos -->
-      <p class="logos__label">Texto chico</p>
-    </div>
-    <div class="marquee">
-      <div class="marquee__track">
-        <!-- // LOGOS: reemplazá cada <img> por tu logo. Se repiten 2 veces para el loop -->
-        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+1" alt="">
-        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+2" alt="">
-        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+3" alt="">
-        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+4" alt="">
-        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+5" alt="">
-        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+6" alt="">
-        <!-- // copia (no tocar, es para el loop) -->
-        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+1" alt="">
-        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+2" alt="">
-        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+3" alt="">
-        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+4" alt="">
-        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+5" alt="">
-        <img src="https://placehold.co/140x48/ffffff/b0b7c3?text=LOGO+6" alt="">
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       // SERVICIOS / FEATURES — tarjetas
-       ============================================================ -->
-  <section id="servicios" class="section">
-    <div class="container">
-      <div class="section__head">
-        <!-- // TÍTULO DE SECCIÓN -->
-        <h2 class="reveal">Revalorizá la capilla escolar de tu barrio</h2>
-        <!-- // DESCRIPCIÓN DE SECCIÓN -->
-        <p class="lead reveal"></p>
-      </div>
-
-      <!-- // TARJETAS: copiá/pegá un .card para agregar más -->
-      <div class="grid grid--3">
-
-        <!-- // CARD 1 -->
-        <article class="card reveal">
-          <div class="card__icon">
-            <!-- // ICONO Revalorización: capilla con flecha hacia arriba -->
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 21V12a8 8 0 0 1 16 0v9"/>
-              <path d="M3 21h18"/>
-              <path d="M12 4V1.5M10.5 3h3"/>
-              <path d="M12 18v-7M9.5 13.5 12 11l2.5 2.5"/>
-            </svg>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1 class="reveal">
+            El <span class="grad">Templo</span> como
+            <span class="grad">Aula</span>
+          </h1>
+          <p class="lead reveal">
+          </p>
+          <div class="hero__actions reveal">
+            <a href="#plan" class="btn btn--primary">Ver el plan</a>
+            <a href="#circuito" class="btn btn--ghost">Conocer el circuito</a>
           </div>
-          <h3>Revalorización</h3>
-          <p>Del patrimonio artístico, histórico, esculptórico y cultural de las iglesias. Dar a conocer estos atractivos al público permite otorgarle la importancia y visibilidad que estos templos se merecen.</p>
-        </article>
-
-        <!-- // CARD 2 -->
-        <article class="card reveal">
-          <div class="card__icon">
-            <!-- // ICONO Comunicación: dos globos de diálogo -->
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3 11a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v0a5 5 0 0 1-5 5H9l-4 3v-3.5A5 5 0 0 1 3 11z"/>
-              <path d="M17 8.5h1a3 3 0 0 1 3 3v0a3 3 0 0 1-3 3v2.5l-2.5-2"/>
-              <path d="M8 11h.01M11 11h.01"/>
-            </svg>
+        </div>
+        <div class="hero__media reveal">
+          <div class="hero__img-wrap floaty">
+            <img
+              src="img/logo.png"
+              alt="Ilustración: alumno guiando una visita en la capilla"
+            />
           </div>
-          <h3>Comunicación</h3>
-          <p>Los alumnos dirigen la visita guiada, lo que les proporciona habilidades de comunicación.</p>
-        </article>
+        </div>
+      </div>
+      <a href="#mision" class="hero__scroll" aria-label="Bajar"></a>
+    </section>
 
-        <!-- // CARD 3 -->
-        <article class="card reveal">
-          <div class="card__icon">
-            <!-- // ICONO Fortalecimiento: manos sosteniendo un corazón -->
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 12.5c-1.8-2-5-1.4-5 1.2 0 2.2 3.2 4.3 5 5.8 1.8-1.5 5-3.6 5-5.8 0-2.6-3.2-3.2-5-1.2z"/>
-              <path d="M2.5 13.5v6h3.5l3 1.5M21.5 13.5v6H18l-3 1.5"/>
-              <path d="M12 2.5v3M9.5 4h5"/>
-            </svg>
+    <!-- ============================================================
+       // NUESTRA MISIÓN
+       // TEXTO PROVISORIO (prólogo del trabajo). Coni pasa el definitivo.
+       ============================================================ -->
+    <section id="mision" class="section">
+      <div class="container mission">
+        <span class="tag reveal">Nuestra misión</span>
+        <h2 class="reveal">PASAME LA MISIÓÓÓÓÓÓÓÓÓÓN</h2>
+        <p class="reveal">
+          Aunque mi única misión es cuidarte toda la vida.
+        </p>
+        <p class="reveal">
+          Te amo <3
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       // BENEFICIOS
+       ============================================================ -->
+    <section id="beneficios" class="section section--soft">
+      <div class="container">
+        <div class="section__head">
+          <span class="tag reveal">Beneficios</span>
+          <h2 class="reveal">Revalorizá la capilla escolar de tu barrio</h2>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 21V12a8 8 0 0 1 16 0v9" />
+                <path d="M3 21h18" />
+                <path d="M12 4V1.5M10.5 3h3" />
+                <path d="M12 18v-7M9.5 13.5 12 11l2.5 2.5" />
+              </svg>
+            </div>
+            <h3>Revalorización</h3>
+            <p>
+              Del patrimonio artístico, histórico, escultórico y cultural de las
+              iglesias. Dar a conocer estos atractivos al público les otorga la
+              importancia y visibilidad que estos templos se merecen.
+            </p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M3 11a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v0a5 5 0 0 1-5 5H9l-4 3v-3.5A5 5 0 0 1 3 11z"
+                />
+                <path d="M17 8.5h1a3 3 0 0 1 3 3v0a3 3 0 0 1-3 3v2.5l-2.5-2" />
+                <path d="M8 11h.01M11 11h.01" />
+              </svg>
+            </div>
+            <h3>Desarrollo</h3>
+            <p>
+              De las habilidades comunicativas de los alumnos, ayudándolos a
+              afrontar problemas comunes en la adolescencia, como la timidez y
+              la ansiedad, mientras se forman bajo los ideales de la conciencia
+              ética y cristiana.
+            </p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M12 12.5c-1.8-2-5-1.4-5 1.2 0 2.2 3.2 4.3 5 5.8 1.8-1.5 5-3.6 5-5.8 0-2.6-3.2-3.2-5-1.2z"
+                />
+                <path d="M2.5 13.5v6h3.5l3 1.5M21.5 13.5v6H18l-3 1.5" />
+                <path d="M12 2.5v3M9.5 4h5" />
+              </svg>
+            </div>
+            <h3>Fortalecimiento</h3>
+            <p>
+              Del vínculo entre la escuela, la capilla y el barrio. Que alumnos,
+              familias y vecinos se encuentren en torno a un patrimonio
+              compartido y construyan una identidad comunitaria.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       // ¿POR QUÉ ALUMNOS? — dato UCA (del trabajo) + exposición gradual
+       ============================================================ -->
+    <section class="section">
+      <div class="container split">
+        <!-- // GRÁFICO (Figura 1 del trabajo). Valores en data-value / data-offset -->
+        <figure class="chart reveal">
+          <div class="chart__head">
+            <h3>Barómetro de la deuda social en infancias</h3>
+            <p>Estudio realizado por la Universidad Católica Argentina (UCA)</p>
           </div>
-          <h3>Fortalecimiento</h3>
-          <p>El proyecto fortacele el vínculo entre la escuela, la parroquia y el barrio: alumnos, familias y vecinos se encuentran en torno a un patrimonio compartido y construyen identidad comunitaria.</p>
-        </article>
 
-      </div>
-    </div>
-  </section>
+          <div class="chart__body">
+            <!-- // LEYENDA: data-seg vincula con el gajo. Pasá el mouse para resaltar -->
+            <ul class="legend">
+              <li data-seg="a"><b>A</b> Niños de 5 a 10 años</li>
+              <li data-seg="b"><b>B</b> Adolescentes de 13 a 17 años</li>
+              <li data-seg="c"><b>C</b> Niños y adolescentes sin demostrar signos de ansiedad</li>
+            </ul>
 
-
-  <!-- ============================================================
-       // ASIDE / BLOQUE IMG + TEXTO (zig-zag)
-       ============================================================ -->
-  <section class="section section--soft">
-    <div class="container">
-
-      <!-- // BLOQUE 1: imagen izquierda, texto derecha -->
-      <div class="split">
-        <div class="split__media reveal">
-          <!-- // IMG -->
-          <img src="https://placehold.co/560x420/f1f3f7/9aa3b2?text=IMG+1" alt="">
-        </div>
-        <div class="split__text">
-          <span class="tag reveal">Etiqueta</span>
-          <!-- // TÍTULO -->
-          <h2 class="reveal">Título del bloque</h2>
-          <!-- // TEXTO -->
-          <p class="reveal">Texto del bloque. Contá algo acá.</p>
-          <!-- // LISTA (borrala si no la usás) -->
-          <ul class="checks reveal">
-            <li>Punto uno</li>
-            <li>Punto dos</li>
-            <li>Punto tres</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- // BLOQUE 2: texto izquierda, imagen derecha (clase split--reverse) -->
-      <div class="split split--reverse">
-        <div class="split__media reveal">
-          <!-- // IMG -->
-          <img src="https://placehold.co/560x420/f1f3f7/9aa3b2?text=IMG+2" alt="">
-        </div>
-        <div class="split__text">
-          <span class="tag reveal">Etiqueta</span>
-          <h2 class="reveal">Título del bloque</h2>
-          <p class="reveal">Texto del bloque. Contá algo acá.</p>
-          <a href="#contacto" class="btn btn--primary reveal">Botón</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       // NÚMEROS / STATS — contadores animados
-       ============================================================ -->
-  <section class="section">
-    <div class="container">
-      <div class="stats">
-        <!-- // STAT: data-count = número final, data-suffix = lo que va después (+, %, k, etc.) -->
-        <div class="stat reveal">
-          <span class="stat__num" data-count="120" data-suffix="+">0</span>
-          <span class="stat__label">Etiqueta</span>
-        </div>
-        <div class="stat reveal">
-          <span class="stat__num" data-count="98" data-suffix="%">0</span>
-          <span class="stat__label">Etiqueta</span>
-        </div>
-        <div class="stat reveal">
-          <span class="stat__num" data-count="15" data-suffix="">0</span>
-          <span class="stat__label">Etiqueta</span>
-        </div>
-        <div class="stat reveal">
-          <span class="stat__num" data-count="24" data-suffix="/7">0</span>
-          <span class="stat__label">Etiqueta</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       // GALERÍA — grilla de imágenes con hover
-       ============================================================ -->
-  <section id="galeria" class="section section--soft">
-    <div class="container">
-      <div class="section__head">
-        <span class="tag reveal">Etiqueta</span>
-        <h2 class="reveal">Título de galería</h2>
-      </div>
-
-      <!-- // GALERÍA: cambiá cada src. La primera ocupa 2 columnas (clase gallery__item--wide) -->
-      <div class="gallery">
-        <a href="#" class="gallery__item gallery__item--wide reveal"><img src="https://placehold.co/900x500/f1f3f7/9aa3b2?text=IMG+A" alt=""></a>
-        <a href="#" class="gallery__item reveal"><img src="https://placehold.co/450x500/f1f3f7/9aa3b2?text=IMG+B" alt=""></a>
-        <a href="#" class="gallery__item reveal"><img src="https://placehold.co/450x500/f1f3f7/9aa3b2?text=IMG+C" alt=""></a>
-        <a href="#" class="gallery__item reveal"><img src="https://placehold.co/450x500/f1f3f7/9aa3b2?text=IMG+D" alt=""></a>
-        <a href="#" class="gallery__item reveal"><img src="https://placehold.co/450x500/f1f3f7/9aa3b2?text=IMG+E" alt=""></a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       // TESTIMONIOS — tarjetas con cita
-       ============================================================ -->
-  <section class="section">
-    <div class="container">
-      <div class="section__head">
-        <span class="tag reveal">Etiqueta</span>
-        <h2 class="reveal">Título testimonios</h2>
-      </div>
-
-      <div class="grid grid--3">
-        <!-- // TESTIMONIO 1 -->
-        <article class="quote reveal">
-          <p>“Cita del cliente. Texto corto.”</p>
-          <div class="quote__author">
-            <!-- // FOTO -->
-            <img src="https://placehold.co/48x48/e5e8ee/9aa3b2?text=A" alt="">
-            <div>
-              <strong>Nombre</strong>
-              <span>Cargo / empresa</span>
+            <!-- // DONUT: los gajos se generan solos desde .donut__lbl (data-seg / data-value) -->
+            <div class="donut">
+              <svg viewBox="0 0 320 320" aria-hidden="true">
+                <defs>
+                  <filter id="donutGlow" x="-30%" y="-30%" width="160%" height="160%">
+                    <feGaussianBlur stdDeviation="6" result="b"/>
+                    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                  </filter>
+                </defs>
+                <circle class="donut__track" cx="160" cy="160" r="90"/>
+                <g class="donut__segs"></g>
+              </svg>
+              <div class="donut__center">
+                <b class="donut__pct"></b>
+              </div>
+              <!-- // ETIQUETAS (valor en data-value; el texto es el de la figura) -->
+              <span class="donut__lbl" data-seg="a" data-value="16">Niños con ansiedad<br /><b>16%</b></span>
+              <span class="donut__lbl" data-seg="b" data-value="22">Adolescentes con ansiedad<br /><b>22%</b></span>
+              <span class="donut__lbl" data-seg="c" data-value="62">Niños y adolescentes sin rasgos de ansiedad<br /><b>62%</b></span>
             </div>
           </div>
-        </article>
-        <!-- // TESTIMONIO 2 -->
-        <article class="quote reveal">
-          <p>“Cita del cliente. Texto corto.”</p>
-          <div class="quote__author">
-            <img src="https://placehold.co/48x48/e5e8ee/9aa3b2?text=B" alt="">
-            <div><strong>Nombre</strong><span>Cargo / empresa</span></div>
-          </div>
-        </article>
-        <!-- // TESTIMONIO 3 -->
-        <article class="quote reveal">
-          <p>“Cita del cliente. Texto corto.”</p>
-          <div class="quote__author">
-            <img src="https://placehold.co/48x48/e5e8ee/9aa3b2?text=C" alt="">
-            <div><strong>Nombre</strong><span>Cargo / empresa</span></div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
 
+          <figcaption>Figura 1. Distribución de los niveles de ansiedad en niños y adolescentes. Gráfico elaborado a partir del Barómetro de la Deuda Social en Infancias de la Universidad Católica Argentina (UCA).</figcaption>
+        </figure>
 
-  <!-- ============================================================
-       // CTA FINAL — banner de cierre
-       ============================================================ -->
-  <section id="contacto" class="section">
-    <div class="container">
-      <div class="cta reveal">
-        <div class="cta__glow"></div>
-        <!-- // TÍTULO CTA -->
-        <h2>Título del llamado a la acción</h2>
-        <!-- // TEXTO CTA -->
-        <p class="lead">Texto corto de cierre.</p>
-        <!-- // BOTONES CTA -->
-        <div class="cta__actions">
-          <a href="mailto:tu@mail.com" class="btn btn--primary btn--lg">Botón</a>
-          <a href="#" class="btn btn--ghost btn--lg">Botón</a>
+        <div class="split__text">
+          <p class="reveal">
+            La ansiedad social entonces es, en definitiva, un problema presente en la adolescencia. Y dado que la idea del proyecto es que está hecho por y para los alumnos, buscando que estos se vean beneficiados y puedan afrontar todos aquellos problemas que se presenten en esta etapa de la vida, por lo que será responsabilidad de sus docentes, identificar a aquellos alumnos que muestran interés en formar parte del proyecto pero que presenten dificultad a la hora de comunicarse o signos de lo que se conoce como “pánico escénico”, y otorgarles diversas herramientas para combatir sus temores con una exposición gradual, que podría comenzar, por ejemplo, con el alumno entregando folletos en la entrada de la iglesia, haciendo así que interactúe con un público de una manera no tan directa.
+          </p>
+          <p class="reveal">
+            Ya resuelto el mayor conflicto a la hora de realizar este trabajo, se detallará por fases la elaboración del mismo.
+          </p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- ============================================================
+       // EL PLAN — FASE 1: Preparación del alumnado y relevamiento del templo
+       Texto tomado del trabajo. Coni lo acorta si hace falta.
+       ============================================================ -->
+    <section id="plan" class="section section--soft">
+      <div class="container">
+        <div class="section__head">
+          <span class="tag reveal">El plan</span>
+          <h2 class="reveal">Cómo aplicarlo en tu colegio</h2>
+          <p class="lead reveal">
+            Tres fases para llevar el modelo a cualquier capilla escolar.
+          </p>
+        </div>
 
-  <!-- ============================================================
+        <!-- // FASE 1 -->
+        <div class="fase reveal">
+          <div class="fase__head">
+            <span class="fase__num">Fase 1</span>
+            <h3>Preparación del alumnado y relevamiento del templo</h3>
+          </div>
+
+          <p>
+            Dado que este recorrido es de carácter escolar, es de suma
+            importancia la preparación previa de los alumnos para poder llevar a
+            cabo el circuito de manera integra y segura, para ello, se
+            incorporará un pequeño taller de confección de visitas guiadas al
+            plan de estudio. Dicho taller tendrá una duración total de 6 horas
+            divididas en 6 clases dictadas por los profesores de las materias de
+            catequesis, historia y prácticas de lenguaje.
+          </p>
+
+          <!-- // TALLER: ficha + cuadro de clases -->
+          <div class="taller">
+            <div class="taller__meta">
+              <div>
+                <dt>Duración</dt>
+                <dd>Dos semanas</dd>
+              </div>
+              <div>
+                <dt>Clases</dt>
+                <dd>6</dd>
+              </div>
+              <div>
+                <dt>Materias</dt>
+                <dd>Catequesis · Historia · Prácticas del Lenguaje</dd>
+              </div>
+            </div>
+
+            <!-- // CUADRO DE CLASES (como la Tabla 1 del trabajo) -->
+            <div class="table-wrap">
+              <table class="tabla">
+                <thead>
+                  <tr>
+                    <th>Clase</th>
+                    <th>Prácticas del Lenguaje</th>
+                    <th>Catequesis</th>
+                    <th>Historia</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <b>Clase 1</b> “Técnicas de investigación y resumen”
+                    </td>
+                    <td class="x">✕</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><b>Clase 2</b> “Elementos comunes en iglesias”</td>
+                    <td></td>
+                    <td class="x">✕</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>Clase 3</b> “Historia de la capilla de la institución”
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td class="x">✕</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>Clase 4</b> “Comunicación no verbal y técnicas de
+                      presentación”
+                    </td>
+                    <td class="x">✕</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><b>Clase 5</b> “Relevamiento de la capilla”</td>
+                    <td></td>
+                    <td class="x">✕</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><b>Clase 6</b> “Prueba piloto”</td>
+                    <td class="x">✕</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <p>
+            Durante el taller, los alumnos interesados en formar parte del
+            proyecto deberán encargarse de confeccionar los discursos que
+            presentarán en cada parada de las visitas guiadas, los cuales
+            deberán indicar el nombre de la obra de arte, una breve reseña
+            histórica y su importancia en las escuelas católicas. Si bien podrán
+            decidir qué decir, se les indicará en qué puntos estratégicos parar
+            de acuerdo con el modelo de este proyecto.
+          </p>
+
+          <!-- // ELABORACIÓN DE FOLLETOS -->
+          <div class="folleto">
+            <div class="folleto__text">
+              <h4>Elaboración de folletos</h4>
+              <p>
+                Otra actividad que los alumnos deberán realizar será la creación
+                de folletos “turísticos” que destaquen, en orden, las diversas
+                paradas del circuito, junto con una pequeña descripción de cada
+                una e imágenes ilustrativas. El propósito es transmitirles a los
+                visitantes una imagen clara e informativa de los atractivos
+                dentro de la capilla para que puedan guiarse mejor durante el
+                recorrido.
+              </p>
+            </div>
+            <!-- // IMG DEL FOLLETO: exportá la Figura 2 del PDF como img/folleto.jpg -->
+            <figure class="folleto__img">
+              <img
+                src="img/folleto.png"
+                alt="Ejemplo de folleto escolar para la visita guiada"
+              />
+              <figcaption>
+                Ejemplo de diseño de folleto escolar para la visita guiada.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       // FASE 2: Cuerpo del circuito — Atractivos 1 a 5
+       Cada atractivo: ícono de contorno grande + título + duración + texto + foto.
+       // TEXTOS: provisorios (del trabajo). Coni los reescribe.
+       // FOTOS: cambiá el src. Están en instrucciones/, movelas a img/.
+       ============================================================ -->
+    <section id="circuito" class="section">
+      <div class="container">
+        <div class="section__head">
+          <span class="fase__num reveal">Fase 2</span>
+          <h2 class="reveal">Cuerpo del circuito</h2>
+          <p class="lead reveal">
+            El circuito consistirá en una visita guiada y organizada de manera
+            voluntaria por alumnos de nivel secundario de entre 15 y 18 años,
+            organizada en torno a cinco paradas estratégicas, donde cuatro de
+            estas podrán encontrarse en cualquier iglesia, y dejando una para
+            destacar la singularidad de la capilla en la que se esté llevando a
+            cabo el recorrido. Su naturaleza voluntaria permite que el recorrido
+            esté dado por aquellos interesados en desarrollar su oratoria y
+            aprender sobre la historia de su entorno, mientras que la elección
+            de edad para realizarlo permite que la visita se vea acompañada por
+            la madurez cognitiva y herramientas necesarias para llevar adelante
+            el proyecto.
+          </p>
+        </div>
+
+        <div class="attrs">
+          <!-- // ATRACTIVO 1 -->
+          <article class="attr reveal">
+            <div class="attr__icon">
+              <!-- // ícono contorno: capilla con campanario -->
+              <svg
+                viewBox="0 0 64 64"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 56V30l14-12 14 12v26" />
+                <path d="M6 56h52" />
+                <path d="M40 56V26l10-8 8 8v30" />
+                <path d="M22 56V42h8v14" />
+                <circle cx="26" cy="30" r="3" />
+                <path d="M50 12V6M47 9h6" />
+                <path d="M46 30h8v6h-8z" />
+              </svg>
+            </div>
+            <div class="attr__body">
+              <span class="attr__label"
+                >Atractivo 1 · Duración estimada de 7 min</span
+              >
+              <h3>Arquitectura y entorno</h3>
+              <p>
+                Saludo general e inicio del recorrido Dar una breve reseña
+                histórica de la institución y su iglesia (año de ignauguración y
+                arquitecto), y detallar los aspectos arquitectónicos de la misma
+              </p>
+            </div>
+            <div class="attr__media">
+              <img
+                src="img/circuito-1-arquitectura.png"
+                alt="Fachada de la capilla"
+              />
+              <span class="attr__caption">Ejemplo de atractivo del circuito</span>
+            </div>
+          </article>
+
+          <!-- // ATRACTIVO 2 -->
+          <article class="attr reveal">
+            <div class="attr__icon">
+              <!-- // ícono contorno: retablo (hornacina con imagen) -->
+              <svg
+                viewBox="0 0 64 64"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M14 56V26a18 18 0 0 1 36 0v30" />
+                <path d="M8 56h48" />
+                <path d="M20 50V28a12 12 0 0 1 24 0v22" />
+                <circle cx="32" cy="28" r="4" />
+                <path d="M26 46c0-6 3-9 6-9s6 3 6 9" />
+                <path d="M14 20h-4M50 20h4" />
+              </svg>
+            </div>
+            <div class="attr__body">
+              <span class="attr__label"
+                >Atractivo 2 · Duración estimada de 5 min</span
+              >
+              <h3>Retablos</h3>
+              <p>
+                Explicar funcioniento de los mismos, sabiendo que son una gran
+                estructura ornamental que combina arquitectura, escultura y
+                pintura
+              </p>
+            </div>
+            <div class="attr__media">
+              <img
+                src="img/circuito-2-retablos.png"
+                alt="Retablo de la Inmaculada Concepción"
+              />
+              <span class="attr__caption">Ejemplo de atractivo del circuito</span>
+            </div>
+          </article>
+
+          <!-- // ATRACTIVO 3 -->
+          <article class="attr reveal">
+            <div class="attr__icon">
+              <!-- // ícono contorno: altar con cruz y bandera -->
+              <svg
+                viewBox="0 0 64 64"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M10 40h44v4H10z" />
+                <path d="M14 44v14M50 44v14" />
+                <path d="M32 40V22M26 28h12" />
+                <path d="M8 58h48" />
+                <path d="M46 14v26" />
+                <path d="M46 14c4 2 8-2 12 0v10c-4-2-8 2-12 0" />
+              </svg>
+            </div>
+            <div class="attr__body">
+              <span class="attr__label"
+                >Atractivo 3 · Duración estimada de 6 min</span
+              >
+              <h3>Altar y Bandera Papal</h3>
+              <p>
+                Detallar las celebraciones y procedimientos que se realizan en
+                el altar principal, como la celebración eucarística, el signo de
+                Cristo, las ofrendas y su función como banquete sagrado. En
+                cuanto a la bandera papal, argumentar su importancia dentro de
+                la escolaridad católica y su papel tanto en los actos escolares
+                como en algunos encuentros religiosos.
+              </p>
+            </div>
+            <div class="attr__media">
+              <img
+                src="img/circuito-3-altar.png"
+                alt="Altar mayor con la bandera papal"
+              />
+              <span class="attr__caption">Ejemplo de atractivo del circuito</span>
+            </div>
+          </article>
+
+          <!-- // ATRACTIVO 4 -->
+          <article class="attr reveal">
+            <div class="attr__icon">
+              <!-- // ícono contorno: imagen sobre columna -->
+              <svg
+                viewBox="0 0 64 64"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="32" cy="12" r="4" />
+                <path d="M26 30c0-7 2-11 6-11s6 4 6 11l2 4H24z" />
+                <path d="M28 19l-5 8M36 19l5 8" />
+                <path d="M22 36h20v4H22z" />
+                <path d="M26 40v16M38 40v16" />
+                <path d="M20 58h24" />
+              </svg>
+            </div>
+            <div class="attr__body">
+              <span class="attr__label"
+                >Atractivo 4 · Duración estimada de 3 min</span
+              >
+              <h3>Imaginería</h3>
+              <p>
+                Mostrar las distintas representaciones de la divinidad dentro de
+                cualquier iglesia, usando ejemplos en obras, pinturas y
+                esculturas dentro de la capilla.
+              </p>
+            </div>
+            <div class="attr__media">
+              <img
+                src="img/circuito-4-imagineria.png"
+                alt="Imaginería de la capilla"
+              />
+              <span class="attr__caption">Ejemplo de atractivo del circuito</span>
+            </div>
+          </article>
+
+          <!-- // ATRACTIVO 5 -->
+          <article class="attr reveal">
+            <div class="attr__icon">
+              <!-- // ícono contorno: bautisterio (pila) con cruz -->
+              <svg
+                viewBox="0 0 64 64"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M32 6v20M25 13h14" />
+                <path d="M14 30h36c0 8-8 14-18 14S14 38 14 30z" />
+                <path d="M28 44v8h8v-8" />
+                <path d="M18 58h28" />
+                <path d="M22 52h20v6H22z" />
+              </svg>
+            </div>
+            <div class="attr__body">
+              <span class="attr__label"
+                >Atractivo 5 · Duración estimada de 4 min</span
+              >
+              <h3>Pieza identitaria de la capilla</h3>
+              <p>
+                Elegir una pintura o escultura que represente a la iglesia como
+                un espacio único donde se forma una comunidad devota a Cristo y
+                sus enseñanzas. Explicar su función y el por qué fue elegida
+                para formar parte del circuito. Cerrar la visita con
+                agradecimientos al público.
+              </p>
+            </div>
+            <div class="attr__media">
+              <img
+                src="img/circuito-5-bautisterio.png"
+                alt="Bautisterio de mármol"
+              />
+              <span class="attr__caption">Ejemplo de atractivo del circuito</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- // RELOJ: duración total. data-minutes = minutos a mostrar -->
+        <div class="clock reveal" data-minutes="26">
+          <div class="clock__face">
+            <svg viewBox="0 0 200 200">
+              <!-- aro -->
+              <circle class="clock__ring" cx="100" cy="100" r="92"/>
+              <!-- arco de progreso (se dibuja) -->
+              <circle class="clock__arc" cx="100" cy="100" r="92"/>
+              <!-- marcas -->
+              <g class="clock__ticks"></g>
+              <!-- agujas -->
+              <line class="clock__hour"   x1="100" y1="100" x2="100" y2="58"/>
+              <line class="clock__minute" x1="100" y1="100" x2="100" y2="30"/>
+              <circle class="clock__pin" cx="100" cy="100" r="5"/>
+            </svg>
+          </div>
+          <div class="clock__text">
+            <span class="clock__label">Duración total estimada</span>
+            <strong><span class="clock__num">0</span> minutos</strong>
+            <span class="clock__sub">aprox.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       // FASE 3: Presupuesto
+       Completá data-amount="15000" en cada monto y el total se suma solo.
+       ============================================================ -->
+    <section id="presupuesto" class="section section--soft">
+      <div class="container">
+        <div class="section__head">
+          <span class="fase__num reveal">Fase 3</span>
+          <h2 class="reveal">Presupuesto</h2>
+          <p class="lead reveal">
+            Presupuesto mensual estimado para la capilla.
+          </p>
+        </div>
+
+        <div class="budget reveal">
+          <table>
+            <thead>
+              <tr>
+                <th>Rubro</th>
+                <th>Detalle</th>
+                <th>Monto mensual</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Papelería</td>
+                <td>Impresión de folletos</td>
+                <td data-amount="">$ no sé</td>
+              </tr>
+              <tr>
+                <td>Desayuno</td>
+                <td>Para los alumnos</td>
+                <td data-amount="">$ no sé xd x2</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2">Total mensual estimado</td>
+                <td id="budget-total">$ no sé xd xd x3</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       // CONTACTO
+       ============================================================ -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <div class="cta reveal">
+          <div class="cta__glow"></div>
+          <h2>Aplicá el modelo en tu capilla</h2>
+          <p class="lead">
+            Contactanos (aunque no me gusta este texto y este título AAAAA TE AMO)
+          </p>
+          <div class="cta__actions">
+            <!-- // MAIL -->
+            <a
+              href="mailto:?subject=El%20Templo%20como%20Aula"
+              class="btn btn--primary btn--lg"
+              >decime un mail para poner acá xd</a
+            >
+            <!-- // TELÉFONO -->
+            <a href="tel:+541111111111" class="btn btn--ghost btn--lg"
+              >+11 1111-1111</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
        // FOOTER
        ============================================================ -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <!-- // LOGO FOOTER -->
-      <a href="#inicio" class="nav__logo"><img src="logo-minimal.svg" alt="Logo"></a>
-
-      <!-- // LINKS FOOTER -->
-      <nav class="footer__links">
-        <a href="#">Nuestra misión</a>
-        <a href="#">El plan</a>
-        <a href="#">Presupuesto</a>
-        <a href="#">Contacto</a>
-      </nav>
-
-      <!-- // REDES: reemplazá los círculos por íconos/imgs -->
-      <div class="footer__social">
-        <a href="#" aria-label="Red 1"></a>
-        <a href="#" aria-label="Red 2"></a>
-        <a href="#" aria-label="Red 3"></a>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a href="#inicio" class="nav__logo"
+          ><img src="img/logo-minimal.svg" alt="Logo"
+        /></a>
+        <nav class="footer__links">
+          <a href="#mision">Nuestra misión</a>
+          <a href="#beneficios">Beneficios</a>
+          <a href="#plan">El plan</a>
+          <a href="#circuito">El circuito</a>
+          <a href="#presupuesto">Presupuesto</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
       </div>
-    </div>
-    <div class="container footer__bottom">
-      <p>Este sitio forma parte de un concurso del Fondo Nacional de las Artes, por lo que su contenido funciona como un modelo ficticio. </p>
-    </div>
-  </footer>
+      <div class="container footer__bottom">
+        <p>
+          Este sitio forma parte de un concurso del Fondo Nacional de las Artes;
+          su contenido funciona como un modelo ficticio.
+        </p>
+      </div>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
