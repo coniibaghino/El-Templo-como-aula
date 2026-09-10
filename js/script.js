@@ -178,18 +178,6 @@ if (clock) {
   }, { threshold: 0.5 }).observe(clock);
 }
 
-// // PRESUPUESTO: suma los montos si las celdas tienen data-amount numérico (ej: data-amount="15000")
-const totalCell = document.getElementById('budget-total');
-if (totalCell) {
-  const cells = [...document.querySelectorAll('.budget tbody td[data-amount]')];
-  const nums = cells.map(td => parseFloat(td.dataset.amount)).filter(n => !isNaN(n));
-  if (nums.length) {
-    const fmt = (n) => '$ ' + n.toLocaleString('es-AR');
-    cells.forEach(td => { const n = parseFloat(td.dataset.amount); if (!isNaN(n)) td.textContent = fmt(n); });
-    totalCell.textContent = fmt(nums.reduce((a, b) => a + b, 0));
-  }
-}
-
 // // PARALLAX SUAVE en el hero (sigue el mouse)
 const heroMedia = document.querySelector('.hero__media');
 if (heroMedia && matchMedia('(pointer:fine)').matches) {
